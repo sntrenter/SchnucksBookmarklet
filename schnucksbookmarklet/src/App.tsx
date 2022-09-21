@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import schnucks from "./Schnucks2.png";
+import gif from "./bookmarklet.gif";
 import Editor from "@monaco-editor/react";
 import "./App.css";
 
@@ -34,8 +35,10 @@ function App() {
           Schnuckscoupon
         </a>
         <p>
-          (P.S. you really shouldn't just run random code from the internet)
+          (P.S. you really shouldn't just run random code from the internet, but
+          the source is below and I've included a gif of it working 🙂)
         </p>
+        <img src={gif} />
       </header>
       <div className="">
         <Editor
@@ -49,6 +52,7 @@ function App() {
             readOnly: true,
             scrollbar: {
               vertical: "hidden",
+              alwaysConsumeMouseWheel: false, //this line was hard to search but is worth paying attention too
             },
           }}
         />
