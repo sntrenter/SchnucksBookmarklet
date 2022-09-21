@@ -10,6 +10,8 @@ for (let i = 0; i < buttons.length; i++) {
 }`;
 //<img src={logo} className="App-logo" alt="logo" />
 function App() {
+  document.title = "Schnucks Bookmarklet";
+
   return (
     <div className="App">
       <header className="App-header">
