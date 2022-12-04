@@ -1,9 +1,10 @@
+import "./App.css";
+
+import Editor from "@monaco-editor/react";
 import React from "react";
+import gif from "./bookmarklet.gif";
 import logo from "./logo.svg";
 import schnucks from "./Schnucks2.png";
-import gif from "./bookmarklet.gif";
-import Editor from "@monaco-editor/react";
-import "./App.css";
 
 let code = `let buttons = document.getElementsByClassName('btn item-btn bold-font schnucks-red-bg')
 for (let i = 0; i < buttons.length; i++) {
@@ -38,6 +39,14 @@ function App() {
           (P.S. you really shouldn't just run random code from the internet, but
           the source is below and I've included a gif of it working 🙂)
         </p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="App-link"
+          href="https://github.com/sntrenter/SchnucksBookmarklet"
+        >
+          You can also check it out on Github!
+        </a>
         <img src={gif} />
       </header>
       <div className="">
